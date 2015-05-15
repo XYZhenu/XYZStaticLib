@@ -9,39 +9,39 @@
 #import "UIView+Geometry.h"
 @implementation UIView (XYZGeometry)
 
--(float)getXyzWidth{
+-(CGFloat)getXyzWidth{
     return self.frame.size.width;
 }
--(void)setXyzWidth:(float)xyzWidth{
+-(void)setXyzWidth:(CGFloat)xyzWidth{
     self.frame=CGRectMake(self.frame.origin.x, self.frame.origin.y, xyzWidth, self.frame.size.height);
 }
 
 
 
--(float)getXyzHeight{
+-(CGFloat)getXyzHeight{
     return self.frame.size.height;
 }
--(void)setXyzHeight:(float)xyzHeight{
+-(void)setXyzHeight:(CGFloat)xyzHeight{
     self.frame=CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width,xyzHeight);
 }
 
 
 
 
--(void)setXyzX:(float)xyzX{
+-(void)setXyzX:(CGFloat)xyzX{
     self.frame=CGRectMake(xyzX, self.frame.origin.y, self.frame.size.width,self.frame.size.height);
 }
--(float)getXyzX{
+-(CGFloat)getXyzX{
     return self.frame.origin.x;
 }
 
 
 
 
--(void)setXyzY:(float)xyzY{
+-(void)setXyzY:(CGFloat)xyzY{
     self.frame=CGRectMake(self.frame.origin.x, xyzY, self.frame.size.width,self.frame.size.height);
 }
--(float)getXyzY{
+-(CGFloat)getXyzY{
     return self.frame.origin.y;
 }
 
@@ -50,20 +50,20 @@
 
 
 
--(void)setXyzX1:(float)xyzX1{
+-(void)setXyzX1:(CGFloat)xyzX1{
     self.frame=CGRectMake(xyzX1-self.frame.size.width, self.frame.origin.y, self.frame.size.width,self.frame.size.height);
 }
--(float)getXyzX1{
+-(CGFloat)getXyzX1{
     return self.frame.origin.x+self.frame.size.width;
 }
 
 
 
 
--(void)setXyzY1:(float)xyzY1{
+-(void)setXyzY1:(CGFloat)xyzY1{
     self.frame=CGRectMake(self.frame.origin.x, xyzY1, self.frame.size.width,self.frame.size.height);
 }
--(float)getXyzY1{
+-(CGFloat)getXyzY1{
     return self.frame.origin.y;
 }
 
@@ -73,20 +73,20 @@
 
 
 
--(void)setXyzX2:(float)xyzX2{
+-(void)setXyzX2:(CGFloat)xyzX2{
     self.frame=CGRectMake(xyzX2, self.frame.origin.y, self.frame.size.width,self.frame.size.height);
 }
--(float)getXyzX2{
+-(CGFloat)getXyzX2{
     return self.frame.origin.x;
 }
 
 
 
 
--(void)setXyzY2:(float)xyzY2{
+-(void)setXyzY2:(CGFloat)xyzY2{
     self.frame=CGRectMake(self.frame.origin.x, xyzY2-self.frame.size.height, self.frame.size.width,self.frame.size.height);
 }
--(float)getXyzY2{
+-(CGFloat)getXyzY2{
     return self.frame.origin.y+self.frame.size.height;
 }
 
@@ -95,20 +95,20 @@
 
 
 
--(void)setXyzX3:(float)xyzX3{
+-(void)setXyzX3:(CGFloat)xyzX3{
     self.frame=CGRectMake(xyzX3-self.frame.size.width, self.frame.origin.y, self.frame.size.width,self.frame.size.height);
 }
--(float)getXyzX3{
+-(CGFloat)getXyzX3{
     return self.frame.origin.x+self.frame.size.width;
 }
 
 
 
 
--(void)setXyzY3:(float)xyzY3{
+-(void)setXyzY3:(CGFloat)xyzY3{
     self.frame=CGRectMake(self.frame.origin.x, xyzY3-self.frame.size.height, self.frame.size.width,self.frame.size.height);
 }
--(float)getXyzY3{
+-(CGFloat)getXyzY3{
     return self.frame.origin.y+self.frame.size.height;
 }
 
@@ -116,26 +116,26 @@
 
 
 
--(void)setXyzXcentral:(float)xyzXcentral{
+-(void)setXyzXcentral:(CGFloat)xyzXcentral{
     self.center = CGPointMake(xyzXcentral, self.center.y);
 }
--(float)getXyzXcentral{
+-(CGFloat)getXyzXcentral{
     return self.center.x;
 }
 
 
--(void)setXyzYcentral:(float)xyzYcentral{
+-(void)setXyzYcentral:(CGFloat)xyzYcentral{
     self.center = CGPointMake(self.center.x,xyzYcentral);
 }
--(float)getXyzYcentral{
+-(CGFloat)getXyzYcentral{
     return self.center.y;
 }
 
 
--(void)xyzSetBoundsWidth:(float)width Height:(float)height{
+-(void)xyzSetBoundsWidth:(CGFloat)width Height:(CGFloat)height{
     self.bounds=CGRectMake(0, 0, width, height);
 }
--(void)xyzSetCenterX:(float)X Y:(float)Y{
+-(void)xyzSetCenterX:(CGFloat)X Y:(CGFloat)Y{
     self.center=CGPointMake(X, Y);
 }
 

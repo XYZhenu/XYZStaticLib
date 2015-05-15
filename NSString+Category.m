@@ -67,13 +67,13 @@
 
 
 
--(CGFloat)wideWithFont:(int)font{
+-(CGFloat)wideWithFont:(NSInteger)font{
     return [self sizeWithFont:[UIFont systemFontOfSize:font]].width+0.5;
 }
--(CGFloat)heightWithWidth:(CGFloat)width Font:(int)font{
+-(CGFloat)heightWithWidth:(CGFloat)width Font:(NSInteger)font{
     return [self sizeWithFont:[UIFont systemFontOfSize:font] constrainedToSize:CGSizeMake(width, MAXFLOAT)].height+0.5;
 }
--(CGFloat)xyzHeightWithWidth:(CGFloat)width Font:(int)font ParagraphStyle:(NSMutableParagraphStyle*(^)(NSMutableParagraphStyle*))paragraph{
+-(CGFloat)xyzHeightWithWidth:(CGFloat)width Font:(NSInteger)font ParagraphStyle:(NSMutableParagraphStyle*(^)(NSMutableParagraphStyle*))paragraph{
     
     NSMutableParagraphStyle *paragraphStyle = paragraph([[ NSMutableParagraphStyle alloc] init]);
 

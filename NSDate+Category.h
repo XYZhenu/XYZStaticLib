@@ -13,7 +13,7 @@
 -(NSString*)xyzDate;
 -(NSString*)xyzTime;
 
-+(instancetype)dateWithYear:(int)year Month:(int)month Day:(int)day Hour:(int)hour Minute:(int)minute;
++(instancetype)dateWithYear:(NSInteger)year Month:(NSInteger)month Day:(NSInteger)day Hour:(NSInteger)hour Minute:(NSInteger)minute;
 -(NSDate*)weekDayFromNow:(NSInteger)weekday;
 
 -(NSInteger)weekDay;

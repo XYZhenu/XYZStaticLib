@@ -21,7 +21,7 @@
 -(NSString*)xyzTime{
     return [self xyzDate:@"HH:mm"];
 }
-+(instancetype)dateWithYear:(int)year Month:(int)month Day:(int)day Hour:(int)hour Minute:(int)minute{
++(instancetype)dateWithYear:(NSInteger)year Month:(NSInteger)month Day:(NSInteger)day Hour:(NSInteger)hour Minute:(NSInteger)minute{
     
     NSCalendar *calendar = [NSCalendar autoupdatingCurrentCalendar];
     NSDateComponents *dateComps = [[NSDateComponents alloc] init];

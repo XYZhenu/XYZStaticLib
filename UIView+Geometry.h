@@ -10,32 +10,32 @@
 #import <Foundation/Foundation.h>
 
 @interface UIView (XYZGeometry)
-@property(nonatomic,getter=getXyzWidth)float xyzWidth;
-@property(nonatomic,getter=getXyzHeight)float xyzHeight;
+@property(nonatomic,getter=getXyzWidth)CGFloat xyzWidth;
+@property(nonatomic,getter=getXyzHeight)CGFloat xyzHeight;
 
-@property(nonatomic,getter=getXyzX)float xyzX;
-@property(nonatomic,getter=getXyzY)float xyzY;
-
-
-@property(nonatomic,getter=getXyzX1)float xyzX1;
-@property(nonatomic,getter=getXyzY1)float xyzY1;
+@property(nonatomic,getter=getXyzX)CGFloat xyzX;
+@property(nonatomic,getter=getXyzY)CGFloat xyzY;
 
 
-@property(nonatomic,getter=getXyzX2)float xyzX2;
-@property(nonatomic,getter=getXyzY2)float xyzY2;
+@property(nonatomic,getter=getXyzX1)CGFloat xyzX1;
+@property(nonatomic,getter=getXyzY1)CGFloat xyzY1;
+
+
+@property(nonatomic,getter=getXyzX2)CGFloat xyzX2;
+@property(nonatomic,getter=getXyzY2)CGFloat xyzY2;
 
 
 
-@property(nonatomic,getter=getXyzX3)float xyzX3;
-@property(nonatomic,getter=getXyzY3)float xyzY3;
+@property(nonatomic,getter=getXyzX3)CGFloat xyzX3;
+@property(nonatomic,getter=getXyzY3)CGFloat xyzY3;
 
 
-@property(nonatomic,getter=getXyzXcentral)float xyzXcentral;
-@property(nonatomic,getter=getXyzYcentral)float xyzYcentral;
+@property(nonatomic,getter=getXyzXcentral)CGFloat xyzXcentral;
+@property(nonatomic,getter=getXyzYcentral)CGFloat xyzYcentral;
 
 
--(void)xyzSetBoundsWidth:(float)width Height:(float)height;
--(void)xyzSetCenterX:(float)X Y:(float)Y;
+-(void)xyzSetBoundsWidth:(CGFloat)width Height:(CGFloat)height;
+-(void)xyzSetCenterX:(CGFloat)X Y:(CGFloat)Y;
 
 
 @end

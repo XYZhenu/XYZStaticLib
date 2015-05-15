@@ -12,7 +12,7 @@
 
 @interface NSString (Category)
 +(NSString*)intString:(NSInteger)number;
-+(NSString*)floatString:(float)number;
++(NSString*)floatString:(CGFloat)number;
 
 -(NSString*)addIntNum:(NSInteger)number;
 -(NSString*)addFloatNum:(CGFloat)number;
@@ -26,7 +26,7 @@
 
 
 
--(CGFloat)wideWithFont:(int)font;
--(CGFloat)heightWithWidth:(CGFloat)width Font:(int)font;
--(CGFloat)xyzHeightWithWidth:(CGFloat)width Font:(int)font ParagraphStyle:(NSMutableParagraphStyle*(^)(NSMutableParagraphStyle*))paragraph;
+-(CGFloat)wideWithFont:(NSInteger)font;
+-(CGFloat)heightWithWidth:(CGFloat)width Font:(NSInteger)font;
+-(CGFloat)xyzHeightWithWidth:(CGFloat)width Font:(NSInteger)font ParagraphStyle:(NSMutableParagraphStyle*(^)(NSMutableParagraphStyle*))paragraph;
 @end
